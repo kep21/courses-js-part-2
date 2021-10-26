@@ -226,5 +226,77 @@ const soldier = {
 const jonh =Object.create(soldier);// 2 метод
 jonh.sayHello();
 
-alert(5);
-alert('git');
+// To string
+console.log(typeof(String(null)));
+
+//  конкатинация
+console.log(typeof(5 + ''));
+
+const number = 5;
+
+console.log("https://vk.com/catalog/ + number");
+
+const fontSize = 26 + 'px';
+
+// To number
+
+console.log(typeof(Number('4'))); // 1 спосіб
+
+console.log(typeof(+'5')); // 2 спосіб
+
+console.log(typeof(parseInt("15px", 10))); // 3 спосіб
+
+
+// To boolean
+// 0, '', null, undefined, Nan - завжди false, тобто не працює
+
+ let switcher = 1;
+
+if (switcher) {
+	console.log('Working...');
+}
+
+// 2
+console.log(typeof(Boolean('4')));
+
+// 3
+console.log(typeof(!!'4444'));
+          // Понимание основ
+// 1
+let x = 5;
+alert(x++);
+
+// 2
+console.log([]+ false);// виводит false
+
+console.log([]+ false - null + true); // Nan
+
+/*let y = 1;
+let с = y = 2;
+alert(c);*/ // працює
+
+console.log([] +1 + 2);// 12
+
+alert("1"[0]);
+
+// console.log(2 && 1 && null & 0 && undefined);
+// и запинается на лжи
+
+//console.log(!!(1 && 2) === (1 && 2));// false
+
+
+                    //  3
+console.log( null || 2 && 3 || 4);
+// 1 пункт- вибираем приоритет операторов.
+//2 пункт- оператор сравнение при правде вернет последнее значение(3).
+//3 пункт- null или(||) 3-|| запинаетсЯ на правде, поєтому вернется 3.
+//4 пункт- 3 || 4 вернет 3, потому что или(||) запинается на правде
+
+
+const a = [1, 2, 3];
+                 // не равни, єто разние ящики с разними яблоками при єтом просто идентични, в общем масиви в данном случае хранят разную инфу
+const b = [1, 2, 3];
+
+alert (+ "INFINITI"); // ВИВЕДЕТ INFINITI, а тип данних число, бо є +
+
+console.log("Ёжики" > "яблоко");
