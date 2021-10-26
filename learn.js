@@ -220,8 +220,11 @@ const soldier = {
 
 /*const jonh = {
 	health:100
-};*/
+};*/ // 1 метод
 //               прототип для jonh від soldier
 //Object.setPrototypeOf(jonh,soldier);
-const jonh =Object.create(soldier);
+const jonh =Object.create(soldier);// 2 метод
 jonh.sayHello();
+
+alert(5);
+alert('git');
